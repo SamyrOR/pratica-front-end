@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+$primary-color: #00c2ff;
+$text-color: #fff;
+$bg-footer: #000;
+$size-title: 48px;
+$size-regular: 18px;
+$primary-dark: darken(
+  $color: $primary-color,
+  $amount: 5%,
+);
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/automotive.jpeg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 100%;
+}
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    p {
+      font-family: "Roboto", sans-serif;
+      margin-left: 10px;
+      color: $text-color;
+      font-size: $size-title;
+      font-weight: bold;
+    }
+  }
+  &__items {
+    display: flex;
+  }
+  &__item {
+    list-style: none;
+  }
+  &__link {
+    text-decoration: none;
+    color: $text-color;
+    padding: 15px;
+    font-family: "Roboto", sans-serif;
+    font-size: $size-regular;
+    &--active {
+      font-weight: bold;
+    }
+  }
+  .button__book {
+    margin-left: 20px;
+  }
+}
+
+.button__book {
+  background-color: $primary-color;
+  color: $text-color;
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 0;
+  margin-left: 5px;
+  font-size: 15px;
+  text-align: center;
+  &:hover {
+    background-color: $primary-dark;
+  }
+}
+
+main {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.info {
+  font-family: "Roboto", sans-serif;
+  &__title {
+    font-size: 64px;
+    color: $primary-color;
+    margin: 0;
+  }
+  &__text {
+    margin-top: 0;
+    color: $text-color;
+    font-size: 36px;
+  }
+}
+.footer {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  height: 110px;
+  background-color: $bg-footer;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  .container {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__title {
+    font-size: $size-regular;
+    color: $primary-color;
+  }
+  &__text {
+    color: $text-color;
+    font-size: $size-regular;
+  }
+}
