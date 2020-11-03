@@ -15,10 +15,10 @@ $primary-dark: darken(
 body {
   margin: 0;
   padding: 0;
-  background-image: url("../images/automotive.jpeg");
+  background-image: url("../images/automotive.jpg");
   background-repeat: no-repeat;
-  background-position: left;
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
 }
 .container {
   max-width: 1024px;
@@ -79,14 +79,13 @@ body {
 }
 
 main {
-  display: flex;
-  justify-items: center;
-  align-items: center;
-  height: 70vh;
+  height: 80vh;
 }
 
 .info {
   font-family: "Roboto", sans-serif;
+  position: absolute;
+  top: 30%;
   &__title {
     font-size: 64px;
     color: $primary-color;
@@ -108,7 +107,7 @@ main {
   font-family: "Roboto", sans-serif;
   .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   &__title {
     font-size: $size-regular;
