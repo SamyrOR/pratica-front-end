@@ -1,0 +1,85 @@
+@import "./base";
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 5rem;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    img {
+      width: 15%;
+    }
+  }
+  &__title {
+    margin-left: 1.5rem;
+    color: $color-text-in-white;
+  }
+  &__phone {
+    color: $color-text-in-primary;
+  }
+}
+
+.menu {
+  &__list {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    li:first-child {
+      a {
+        color: $color-text-in-white;
+      }
+    }
+  }
+  &__items {
+    display: block;
+    flex: auto;
+    background-color: $color-primary;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    text-align: center;
+  }
+  &__link {
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: $color-text-in-primary;
+  }
+}
+
+main {
+  .main {
+    position: absolute;
+    top: 30%;
+    font-weight: lighter;
+    &__title {
+      font-weight: lighter;
+      font-size: 4rem;
+      color: $color-text-in-primary;
+      padding: 1.5rem;
+    }
+    &__info {
+      padding: 1rem;
+      margin: 1rem 0;
+      font-size: 1.5rem;
+      width: 30%;
+      color: $color-primary;
+    }
+    &__link {
+      padding: 0.5rem 1.5rem;
+      font-size: 1.5rem;
+      text-decoration: none;
+      background-color: $color-primary;
+      color: $color-text-in-primary;
+    }
+  }
+}
+.bg--dark {
+  background-color: $color-primary-dark;
+}
+.bg--light {
+  background-color: $color-active;
+}

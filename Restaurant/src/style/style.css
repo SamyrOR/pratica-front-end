@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+.container {
+  width: 90vw;
+  max-width: 700px;
+}
+
+:root {
+  font-size: 60%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  background-image: url("../images/bg-restaurant.png");
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 20vh;
+  background: linear-gradient(to bottom, #2d99a4, rgba(0, 0, 0, 0));
+  z-index: -1;
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30vw;
+  height: 100vh;
+  background: linear-gradient(to right, #fff, rgba(0, 0, 0, 0));
+  z-index: -2;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 5rem;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+.header__logo img {
+  width: 15%;
+}
+.header__title {
+  margin-left: 1.5rem;
+  color: #026e78;
+}
+.header__phone {
+  color: #fff;
+}
+
+.menu__list {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+}
+.menu__list li:first-child a {
+  color: #026e78;
+}
+.menu__items {
+  display: block;
+  flex: auto;
+  background-color: #2d99a4;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  text-align: center;
+}
+.menu__link {
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+main .main {
+  position: absolute;
+  top: 30%;
+  font-weight: lighter;
+}
+main .main__title {
+  font-weight: lighter;
+  font-size: 4rem;
+  color: #fff;
+  padding: 1.5rem;
+}
+main .main__info {
+  padding: 1rem;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  width: 30%;
+  color: #2d99a4;
+}
+main .main__link {
+  padding: 0.5rem 1.5rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  background-color: #2d99a4;
+  color: #fff;
+}
+
+.bg--dark {
+  background-color: #0e727b;
+}
+
+.bg--light {
+  background-color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
