@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.bg {
+  width: 100vw;
+  height: 100vh;
+  background-color: #cb021c;
+}
+
+.top-bar {
+  display: flex;
+  padding: 30px;
+  width: 100vw;
+  color: blue;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hamburguer {
+  cursor: pointer;
+}
+
+.hamburguer__line {
+  background-color: white;
+  width: 83px;
+  height: 12px;
+  margin-bottom: 15px;
+}
+.hamburguer__line:last-child {
+  margin-bottom: 0;
+}
+
+.text-box {
+  font-family: Roboto;
+  text-align: center;
+}
+
+.text-box .title {
+  color: white;
+  font-size: 64px;
+  margin-bottom: 5px;
+}
+
+.text-box p {
+  margin: 0;
+  font-size: 36px;
+}
+
+main {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: 50vh;
+}
+
+main::before {
+  content: "<";
+  position: absolute;
+  left: 30px;
+  font-family: sans-serif;
+  font-size: 120px;
+  color: #a50015;
+  cursor: pointer;
+}
+
+main::after {
+  content: ">";
+  position: absolute;
+  right: 30px;
+  font-family: sans-serif;
+  font-size: 120px;
+  color: #a50015;
+  cursor: pointer;
+}
+
+.main-img {
+  cursor: pointer;
+}
+
+.slider-line {
+  background-color: #a50015;
+  height: 10px;
+  width: 80px;
+  margin: 26px;
+}
+.slider-line--up {
+  transform: rotate(-30deg);
+}
+.slider-line--down {
+  transform: rotate(30deg);
+}
+
+.main-title {
+  position: absolute;
+  bottom: 200px;
+  font-family: Roboto;
+  font-size: 144px;
+  color: white;
+}
+.main-title p {
+  margin: 0;
+}
+footer {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  color: #fff;
+  font-size: 34px;
+  width: 325px;
+  height: 75px;
+  border: none;
+  background-color: #40020e;
+}
+.sliders {
+  margin-top: 50px;
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+}
+
+.sliders-circle:first-child {
+  background-color: #fff;
+}
+.sliders-circle {
+  border-radius: 50%;
+  background-color: #970014;
+  width: 32px;
+  height: 32px;
+}
